@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDEDE">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/imageView7"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:keepScreenOn="true"
+        android:src="@drawable/list5_title"/>
+
+    <ImageButton
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/f5"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"
+        android:layout_x="303dp"
+        android:layout_y="22dp"
+        android:onClick="onButtonClicked" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="1dp"
+        android:layout_y="48dp">
+
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView18"
+            android:src="@drawable/list5_image1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="55dp"
+            android:id="@+id/imageView19"
+            android:src="@drawable/list5_text1"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/imageView18"
+            android:layout_alignParentStart="true" />
+
+        <ToggleButton
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageButton3"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:textOn= ""
+            android:textOff=""
+            android:background="@drawable/list5_button1"
+            android:layout_below="@+id/imageView19"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:onClick="onButton1Clicked"
+            android:checked="false" />
+    </RelativeLayout>
+
+</AbsoluteLayout>

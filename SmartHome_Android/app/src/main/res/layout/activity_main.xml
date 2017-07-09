@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#DEDEDE"
+    tools:context="kr.co.songhee.smarthome.MainActivity"
+    android:nestedScrollingEnabled="true"
+    android:onClick="onButtonClicked">
+
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="85dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/title"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/wonderwoman"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClicked" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/shoppingcart"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView3"
+        android:layout_marginEnd="19dp"
+        android:src="@drawable/highheel"
+        android:layout_marginBottom="39dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/copyright"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundGravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginStart="47dp" />
+
+</RelativeLayout>
